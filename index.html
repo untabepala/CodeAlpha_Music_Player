@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Players</title>
+</head>
+<body>
+<div class="music-player">
+    <div class="album-cover">
+        <img src="s1.PNG" alt="rotatingImage" id="rotatingImage">
+        <span class="point"></span>
+    </div>
+
+    <h1 class="song-title">At My Worst</h1>
+    <p class="artist-name">Pink Sweat$</p>
+
+    <audio id="song">
+        <source src="At My Worst.mpeg" type="audio/mpeg">
+    </audio>
+
+    <input type="range" value="0" id="progress">
+    <div class="controls">
+        <button class="backward">
+            <i class="fa-solid fa-backward"></i>
+        </button>
+        <button class="play-pause-btn">
+            <i class="fa-solid fa-play" id="controlIcon"></i>
+        </button>
+        <button class="forward">
+            <i class="fa-solid fa-forward"></i>
+        </button>
+    </div>
+</div>
+
+<script src="app.js"></script>  
+</body>
+</html>
